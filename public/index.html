@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Encriptador de texto</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Fin Google Fonts -->
+    <!-- Normalizador -->
+    <link rel="stylesheet" href="./assets/css/normalize.css"/>
+    <!-- Fin Normalizador -->
+    <!-- Estilo principal -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <!-- Fin Estilo principal -->
+    <scrip src="./assets/js/script.js"></scrip>
+</head>
+<body>
+    <main>
+        <section class="input-section">
+            <div class="logo">
+                <img src="./assets/img/Logo" alt="Logo Alura"/>
+            </div>
+            <form>
+                <textarea id="textarea" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+            </form>
+            <div class="panel">
+                <div class="requisitos">
+                    <img src="./assets/img/bi_exclamation-circle-fill.png" alt="Sigo de exclamación"/>
+                    <small>Solo letras minúsculas y sin acentos</small>
+                </div>
+                <div class="botones">
+                    <button class="encrypt">Encriptar</button>
+                    <button class="decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <div class="output-container">
+                <p class="output-message"></p>
+                <div class="first-output">
+                    <img src="./assets/img/Muñeco.png" alt="Ilustración" class="illustration">
+                    <h2 class="output-title">Ningún mensaje fue encontrado</h2>
+                    <p class="initial-message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button class="copy">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

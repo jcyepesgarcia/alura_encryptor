@@ -1,0 +1,370 @@
+/* =======================================================================================
+                                        GLOBALES
+========================================================================================*/
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #f3f5fc;
+    font-size: 1.6rem;
+}
+
+
+/* =====================================================================================
+                                        MAIN
+=======================================================================================*/
+main{
+    /* border: 1px solid; */
+    width: 75vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+}
+
+
+/********************************* INTPUT SECTION ************************************/
+.input-section{
+    /* border: 1px solid rgb(7, 239, 42); */
+    width: 70%;
+    position: relative;
+}
+
+
+/************************************************************************************/
+.logo{
+    /* border: 1px solid rgb(0, 76, 255); */
+    margin: 0 0 0 8.4%;
+}
+
+
+/***********************************************************************************/
+.input-section form{
+    /* border: 1px solid red; */
+    margin: 8rem 8rem 0 24%;
+    max-width: 58.2rem;
+    height: 65%;
+}
+
+form textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    font-size: 2.4rem;
+    color: #0A3871;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+/* IE 10+ */
+textarea:-ms-input-placeholder {
+    color: #0A3871;
+}
+
+/* WebKit */
+textarea::-webkit-input-placeholder {
+    color: #0A3871;
+}
+
+/* Firefox 19+ */
+textarea::-moz-placeholder {
+    color: #0A3871;
+}
+
+
+/***********************************************************************************/
+.panel{
+    /* border: 1px solid rgb(86, 108, 55); */
+    width: calc(70vw *0.75);
+    position: absolute;
+    bottom: 4rem;
+}
+
+
+/***********************************************************************************/
+.requisitos{
+    /* border: 1px solid rgb(86, 108, 55); */
+    margin: 2rem 8rem 1.6rem 24%;
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+.requisitos img{
+    float: left;
+    margin-right: 0.8rem;
+}
+
+
+/************************************************************************************/
+.botones{
+    /* border: 1px solid rgb(64, 88, 160); */
+    margin: 0 8rem 0 24%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encrypt, .decrypt, .copy{
+    width: 40%;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    opacity: 0.8;
+    transition: transform 1.2s;
+}
+
+.encrypt{
+    background-color: #0a3871;
+    color: #fff;
+    border: none;
+}
+
+.decrypt, .copy{
+    background-color: #d8dfe8;
+    color: #0A3871;
+    border-color: #0a3871;;
+}
+
+.encrypt:hover, .decrypt:hover, .copy:hover{
+    cursor: pointer;
+    opacity: 1;
+
+    transform: scale(0.9);
+}
+
+.encrypt:active, .decrypt:active, .copy:active{
+    font-weight: 700;
+}
+
+
+
+/****************************** OUTPUT SECTION **************************************/
+.output-section{
+    /* border: 1px solid rgb(239, 208, 7); */
+    width: 30%;
+}
+
+
+/************************************************************************************/
+.output-container{
+    /* border: 1px solid green; */
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 3.2rem;
+    padding: 0 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 24px 32px -25px #000000;
+}
+
+.output-message{
+    display: none;
+    text-align: justify;
+    max-height: 70%;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.output-message::-webkit-scrollbar {
+    display: none;
+}
+
+.illustration{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 3.2rem;
+}
+
+.output-title, .initial-message{
+    text-align: center;
+}
+
+.output-title{
+    margin-bottom: 1.6rem;
+}
+
+.copy{
+    display: none;
+    width: 65%;
+    align-self: center;
+    position: absolute;
+    bottom: 4rem;
+}
+
+
+
+/* ==================================================================================
+
+************************************ TABLE LAYOUT ***********************************
+
+===================================================================================*/
+@media screen and (max-width: 48.06rem ){
+
+    /* ==============================================================================
+                                    MAIN
+    ===============================================================================*/
+    main{
+        width: 100vw;
+        height: auto;
+        margin: initial;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /****************************** INTPUT SECTION ********************************/
+    .input-section{
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /*******************************************************************************/
+    .logo{
+        margin: 7.3rem 0 0 4rem;
+    }
+
+
+    /*******************************************************************************/
+    .input-section form{
+        margin: 8rem 4rem 0 4rem;
+        width: auto;
+        height: 65%;
+    }
+
+
+    /*******************************************************************************/
+    .panel{
+        position: static;
+        width: 100%;
+    }
+
+
+    /*******************************************************************************/
+    .requisitos{
+        margin: 2rem 4rem 1.6rem 4rem;
+    }
+
+
+
+    /*******************************************************************************/
+    .botones{
+        margin: 0 4rem 2rem;
+    }
+
+
+    /****************************** OUTPUT SECTION ********************************/
+    .output-section{
+        width: 100%;
+        padding: 3.2rem;
+    }
+
+
+    /*******************************************************************************/
+    .output-container{
+        padding: 5rem 3.2rem;
+    }
+
+    .illustration{
+        display: none;
+    }
+
+    .output-title, .initial-message{
+        margin: 0;
+    }
+
+    .output-title{
+        margin-bottom: 1.6rem;
+    }
+
+    .encrypt, .decrypt, .copy{
+        width: 48%;
+        padding: 2rem 0;
+    }
+
+    .copy{
+        position: static;
+        margin-top: 3rem;
+    }
+
+}
+
+
+
+/* ==================================================================================
+
+********************************** MOBILE LAYOUT ************************************
+===================================================================================*/
+@media screen and (max-width: 37.5rem){
+
+    /****************************** INTPUT SECTION ********************************/
+    .logo{
+        margin: 2.4rem 0 0 1.6rem;
+    }
+
+
+    /*******************************************************************************/
+    .input-section form{
+        margin: 5rem 1.6rem 0 1.6rem;
+    }
+
+
+    /*******************************************************************************/
+    .requisitos{
+        margin: 2rem 1.6rem 4rem;
+    }
+
+
+    /*******************************************************************************/
+    .botones{
+        margin: 0 1.6rem 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encrypt, .decrypt, .copy{
+        width: 100%;
+    }
+
+    .encrypt{
+        margin-bottom: 1rem;
+    }
+
+    /****************************** OUTPUT SECTION ********************************/
+    .output-section{
+        margin: 0;
+        padding: 1.6rem;
+    }
+
+    .output-container{
+        padding: 5rem 1.6rem;
+    }
+
+}
